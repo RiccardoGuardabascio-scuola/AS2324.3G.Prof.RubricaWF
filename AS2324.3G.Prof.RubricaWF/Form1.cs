@@ -28,6 +28,14 @@ namespace AS2324._3G.Prof.RubricaWF
             simpatia[nRecordInseriti] = Convert.ToInt32(cmbSimpatia.Text);
             nRecordInseriti++;
             lblNRecord.Text = ($"N. record inseriti :{nRecordInseriti}");
+            lstElenco.Items.Add(cognome[nRecordInseriti]);
+            lstElenco.Items.Add(nome[nRecordInseriti]);
+            lstElenco.Items.Add(email[nRecordInseriti]);
+            lstElenco.Items.Add(nickname[nRecordInseriti]);
+            lstElenco.Items.Add(annoNascita[nRecordInseriti]);
+            lstElenco.Items.Add(simpatia[nRecordInseriti]);
+            
+
         }
 
         private void btnRicerca_Click(object sender, EventArgs e)
